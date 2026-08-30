@@ -46,7 +46,7 @@ Busco oportunidade de estágio para aplicar meus conhecimentos em desenvolviment
 #### 🗃️ Programação de Computadores
 | Projeto | Descrição | Link |
 | :--- | :--- | :---: |
-| **Algoritmo de Alditoria de Dados** | Programa que analisa a consistência de dados financeiros, utilizando escopo global/local para parâmetros de segurança e lógica condicional para detecção de anomalias. | [Ver Projeto](./projeto-algoritmo-de-alditoria-de-dados/) |
+| **Algoritmo de Alditoria de Dados** | Programa que analisa a consistência de dados financeiros, utilizando escopo global/local para parâmetros de segurança e lógica condicional para detecção de anomalias. | [Ver Projeto](./projeto-algoritimo-de-alditoria-de-dados/) |
 | **Engenharia de Soluções Logicas** | Solução algorítmica para um problema complexo do mundo real, partindo da abstração visual até a validação lógica. | [Ver Projeto](./projeto-engenharia-de-solucoes-logicas/) |
 | **Modularização** | Arquitetura de um software de forma unplugged, priorizando a lógica sobre a sintaxe. | [Ver Projeto](./projeto-modularizacao/) |
 | **Traduzindo Lógica para Python** | Este repositório contém exercícios práticos de tradução de lógica de programação. O objetivo é demonstrar a transição entre estruturas de algoritmos em português (pseudocódigo) e a implementação funcional em Python. | [Ver Projeto](./projeto-traduzindo-logica-para-python/) |
