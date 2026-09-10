@@ -27,7 +27,7 @@ Busco oportunidade de estágio para aplicar meus conhecimentos em desenvolviment
 ![n8n](https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white)
  
 #### 🗄️ Banco de Dados
-![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34)
+
  
 #### 🤖 Inteligência Artificial & Ciência de Dados
 ![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)
