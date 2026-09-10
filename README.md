@@ -57,7 +57,7 @@ Busco oportunidade de estágio para aplicar meus conhecimentos em desenvolviment
 #### 🤖 Inteligência Artificial
 | Projeto | Descrição | Link |
 | :--- | :--- | :---: |
-| **Predição de Churn** | Algoritmo de classificação para prever saída de clientes. | [Ver Projeto](./projeto-ia-churn/) |
+| **** |  | [Ver Projeto]() |
  
 ---
  
