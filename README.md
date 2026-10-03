@@ -58,7 +58,7 @@ Busco oportunidade de estágio para aplicar meus conhecimentos em desenvolviment
 | **Desenhando Emojis com Dados** | Manipulamento de listas, tuplas e dicionários usando loops aninhados para criar e modificar a "arte" de um emoji. | [Ver Projeto](./projeto-desenhando-emojis-com-dados/) |
 | **Sistema de Auditoria de Recursos Corporativos** | Este código tem como objetivo calcular o orçamento total de uma empresa a partir de uma estrutura hierárquica de departamentos, utilizando recursão, decorators, *args e **kwargs para tornar o processamento flexível, dinâmico e auditável. | [Ver Projeto](./projeto-sistema-de-auditoria-de-recursos-corporativos/) |
  
-#### 🤖 Inteligência Artificial
+#### 🤖 Engenharia de Prompt e Aplicações em IA
 | Projeto | Descrição | Link |
 | :--- | :--- | :---: |
 | **** |  | [Ver Projeto]() |
