@@ -40,7 +40,9 @@ Um organizador de rotinas com IA, acessado por chat em linguagem natural. O usu�
 
 ### 🧩 Arquitetura do Ecossistema
 
-![Diagrama do ecossistema](Diagram-Ecosistema/diagrama-ecosistema.pdf)
+<p>
+<img src="diagrama-ecosistema.png" width="32%" />
+</p>
 
 | Camada | Tecnologia | Função |
 | --- | --- | --- |
