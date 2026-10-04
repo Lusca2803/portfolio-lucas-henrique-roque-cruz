@@ -61,7 +61,7 @@ Busco oportunidade de estágio para aplicar meus conhecimentos em desenvolviment
 #### 🤖 Engenharia de Prompt e Aplicações em IA
 | Projeto | Descrição | Link |
 | :--- | :--- | :---: |
-| **** |  | [Ver Projeto]() |
+| **Organizador de Rotina com IA** | Ecossistema de IA que organiza a rotina do usuário em linguagem natural, integrando n8n (automação), ChatGPT (geração de rotinas) e Firebase (armazenamento). Protótipo funcional via bot no Telegram. Desenvolvido em grupo (Vibes & Codes) na disciplina de Engenharia de Prompt. | [Ver Projeto](./projeto-organizador-de-rotina-com-ia) |
  
 ---
  
