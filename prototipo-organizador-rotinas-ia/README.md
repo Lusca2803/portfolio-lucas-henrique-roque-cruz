@@ -125,5 +125,5 @@ Para validar o fluxo, o workflow foi implementado no n8n com o **Telegram** como
 ### 📎 Documentação
 
 - [📘 Memorial de Construção](Memorial_de_construção)
-- [📗 Projeto de Ecossistema com IA](projeto-ecossistema-ia.pdf)
+- [📗 Projeto de Ecossistema com IA](docs/projeto-ecossistema-ia.pdf)
 - [⚙️ Workflow n8n (JSON)](workflow/workflow-organize-routine.json)
