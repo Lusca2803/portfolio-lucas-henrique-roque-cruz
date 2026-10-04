@@ -1,0 +1,168 @@
+{
+  "name": "workflow-organize-routine",
+  "nodes": [
+    {
+      "parameters": {
+        "updates": [
+          "message"
+        ],
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegramTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -96,
+        0
+      ],
+      "id": "98a1f957-8868-4826-8d33-2cd7171fb81e",
+      "name": "Telegram Trigger",
+      "webhookId": "c6eaa32a-55fd-407d-b0d2-c32ca9a5e987",
+      "credentials": {
+        "telegramApi": {
+          "id": "yvd17rG0rY2Pl5Uq",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "={{ $json.output }}",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        480,
+        0
+      ],
+      "id": "96328155-dd1a-4958-8305-a15e8a0bb75d",
+      "name": "Send a text message",
+      "webhookId": "800794a8-97ec-42ac-9386-45e2ddc3e38d",
+      "credentials": {
+        "telegramApi": {
+          "id": "yvd17rG0rY2Pl5Uq",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.message.text }}",
+        "options": {
+          "systemMessage": "##Persona\n-Você é um organizador de rotina altamente personalizado com o objetivo de maximizar a produtividade, manter o equilíbrio entre tarefas e garantir consistência ao longo do tempo.\n\n## Tarefa\n-Organizar e otimizar a rotina do usuário utilizando as informações que ele inserir\n\n## Contexto\n-Muitos usuários tem dificuldade em organizar sua rotina e acabam perdendo produtividade dia a dia.\n\n## Regras\n-Seja sempre claro e objetivo.\n-Inicie a conversa coletando algumas informações do usuário. (Nome, idade, estuda, trabalha)\n-Quando for adicionar um compromisso sempre perguntar a data no formato  dd/mm/aaa\n-Sempre que possível, sugira uma rotina organizada em formato de lista ou cronograma com horários definidos.\n-Considere equilíbrio entre trabalho, descanso e lazer ao sugerir a rotina.\n\n## Importante\n-Se não houver contexto suficiente faça perguntas ao usuário das seguintes informações:\n* Qual horário a pessoa acorda\n* Se ela estuda, trabalha ou faz ambos\n* Se ela pratica exercícios físicos\n* Qual horário normalmente dorme\n\n## Banco de dados\n-Você pode ler e pesquisar informações de cada usuário no banco de dados, para complementar a rotina.\n\n## Formato de saída\n-textos simples e objetivo para públicos com dificuldade em organizar sua rotina\n-Sempre que possível, apresentar a rotina final em formato estruturado (ex: lista por horários ou períodos do dia).\n"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        128,
+        0
+      ],
+      "id": "201d8582-dc9d-455d-8cf1-fad5f6c30f5d",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-5-mini"
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.3,
+      "position": [
+        64,
+        224
+      ],
+      "id": "82a8e334-28e4-44c3-bdd0-3342c1a3c0d1",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "fVIkpUwgDQwJ6UsH",
+          "name": "n8n free OpenAI API credits"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "={{ $json.message.from.id }}",
+        "contextWindowLength": 20
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        256,
+        240
+      ],
+      "id": "d68f6ac6-06fa-4101-b1af-f0c6c6d01f65",
+      "name": "Simple Memory"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Telegram Trigger": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Send a text message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "3a257a2d-86da-4d69-b4a7-f627ebc96f3b",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "ee6df5a713086a7ed28e1de9c149d7f61333eeeec766be6a79da9c1f5200b220"
+  },
+  "id": "vQFOR2MtLWoOcy9b",
+  "tags": []
+}
