@@ -50,18 +50,18 @@ Busco oportunidade de estágio para aplicar meus conhecimentos em desenvolviment
 #### 🗃️ Programação de Computadores
 | Projeto | Descrição | Link |
 | :--- | :--- | :---: |
-| **Algoritmo de Alditoria de Dados** | Programa que analisa a consistência de dados financeiros, utilizando escopo global/local para parâmetros de segurança e lógica condicional para detecção de anomalias. | [Ver Projeto](./projeto-algoritimo-de-alditoria-de-dados/) |
-| **Engenharia de Soluções Logicas** | Solução algorítmica para um problema complexo do mundo real, partindo da abstração visual até a validação lógica. | [Ver Projeto](./projeto-engenharia-de-solucoes-logicas/) |
-| **Modularização** | Arquitetura de um software de forma unplugged, priorizando a lógica sobre a sintaxe. | [Ver Projeto](./projeto-modularizacao/) |
-| **Traduzindo Lógica para Python** | Este repositório contém exercícios práticos de tradução de lógica de programação. O objetivo é demonstrar a transição entre estruturas de algoritmos em português (pseudocódigo) e a implementação funcional em Python. | [Ver Projeto](./projeto-traduzindo-logica-para-python/) |
-| **Engenharia de Contexto e Lógica Física** | Aplicado os conceitos de Listas, Estruturas de Repetição (for, while), Estruturas de Decisão (if/else, match-case), Funções e Operadores Complexos na resolução de problemas do mundo real, exigindo coleta de dados manual e mapeamento espacial. | [Ver Projeto](./projeto-engenharia-de-contexto-e-logica-fisica/) |
-| **Desenhando Emojis com Dados** | Manipulamento de listas, tuplas e dicionários usando loops aninhados para criar e modificar a "arte" de um emoji. | [Ver Projeto](./projeto-desenhando-emojis-com-dados/) |
-| **Sistema de Auditoria de Recursos Corporativos** | Este código tem como objetivo calcular o orçamento total de uma empresa a partir de uma estrutura hierárquica de departamentos, utilizando recursão, decorators, *args e **kwargs para tornar o processamento flexível, dinâmico e auditável. | [Ver Projeto](./projeto-sistema-de-auditoria-de-recursos-corporativos/) |
+| **Algoritmo de Auditoria de Dados** | Programa que analisa a consistência de dados financeiros, utilizando escopo global/local para parâmetros de segurança e lógica condicional para detecção de anomalias. | [Ver Projeto](./programacao-de-computadores/projeto-algoritimo-de-auditoria-de-dados/) |
+| **Engenharia de Soluções Logicas** | Solução algorítmica para um problema complexo do mundo real, partindo da abstração visual até a validação lógica. | [Ver Projeto](./programacao-de-computadores/projeto-engenharia-de-solucoes-logicas/) |
+| **Modularização** | Arquitetura de um software de forma unplugged, priorizando a lógica sobre a sintaxe. | [Ver Projeto](./programacao-de-computadores/projeto-modularizacao/) |
+| **Traduzindo Lógica para Python** | Este repositório contém exercícios práticos de tradução de lógica de programação. O objetivo é demonstrar a transição entre estruturas de algoritmos em português (pseudocódigo) e a implementação funcional em Python. | [Ver Projeto](./programacao-de-computadores/projeto-traduzindo-logica-para-python/) |
+| **Engenharia de Contexto e Lógica Física** | Aplicado os conceitos de Listas, Estruturas de Repetição (for, while), Estruturas de Decisão (if/else, match-case), Funções e Operadores Complexos na resolução de problemas do mundo real, exigindo coleta de dados manual e mapeamento espacial. | [Ver Projeto](./programacao-de-computadores/projeto-engenharia-de-contexto-e-logica-fisica/) |
+| **Desenhando Emojis com Dados** | Manipulamento de listas, tuplas e dicionários usando loops aninhados para criar e modificar a "arte" de um emoji. | [Ver Projeto](./programacao-de-computadores/projeto-desenhando-emojis-com-dados/) |
+| **Sistema de Auditoria de Recursos Corporativos** | Este código tem como objetivo calcular o orçamento total de uma empresa a partir de uma estrutura hierárquica de departamentos, utilizando recursão, decorators, *args e **kwargs para tornar o processamento flexível, dinâmico e auditável. | [Ver Projeto](./programacao-de-computadores/projeto-sistema-de-auditoria-de-recursos-corporativos/) |
  
 #### 🤖 Engenharia de Prompt e Aplicações em IA
 | Projeto | Descrição | Link |
 | :--- | :--- | :---: |
-| **Organizador de Rotina com IA** | Ecossistema de IA que organiza a rotina do usuário em linguagem natural, integrando n8n (automação), ChatGPT (geração de rotinas) e Firebase (armazenamento). Protótipo funcional via bot no Telegram. Desenvolvido em grupo (Vibes & Codes) na disciplina de Engenharia de Prompt. | [Ver Projeto](prototipo-organizador-rotinas-ia) |
+| **Organizador de Rotina com IA** | Ecossistema de IA que organiza a rotina do usuário em linguagem natural, integrando n8n (automação), ChatGPT (geração de rotinas) e Firebase (armazenamento). Protótipo funcional via bot no Telegram. Desenvolvido em grupo (Vibes & Codes) na disciplina de Engenharia de Prompt. | [Ver Projeto](./engenharia-de-prompt-e-aplicacoes-em-ia/prototipo-organizador-rotinas-ia/) |
  
 ---
  
@@ -70,4 +70,5 @@ Abaixo, a organização deste repositório para facilitar a navegação:
  
 - `📄 README.md`: Este arquivo com a visão geral do meu portfólio e trajetória acadêmica.
 - `📂 /cv/`: Contém meu currículo em formato PDF para visualização e download.
-- `📂 /projeto-*/`: Pastas individuais contendo o código-fonte, exercícios e documentação de cada projeto listado acima.
+- `📂 /programacao-de-computadores/`: Projetos da disciplina de Programação de Computadores, cada um em sua pasta `projeto-*/` com código-fonte, exercícios e documentação.
+- `📂 /engenharia-de-prompt-e-aplicacoes-em-ia/`: Projetos da disciplina de Engenharia de Prompt e Aplicações em IA, como o `prototipo-organizador-rotinas-ia/`.
